@@ -1,0 +1,25 @@
+body {
+    background-image: $body-background;
+}
+
+section {
+    background-color: $section-background;
+}
+
+button {
+    background-color: transparent;
+    color: $word-color-3;
+}
+
+button:hover {
+    color: $word-color-1;
+}
+
+button.active {
+    color: $word-color-4;
+}
+
+.answer {
+    color: $word-color-2;
+}
+

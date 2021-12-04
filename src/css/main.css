@@ -1,0 +1,129 @@
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  font-size: 12px;
+}
+
+button {
+  font-size: 14px;
+}
+
+h1, button:hover, button.active {
+  font-weight: 700;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background-image: linear-gradient(to bottom, #af67e9, #6565e7);
+}
+
+section {
+  background-color: white;
+}
+
+button {
+  background-color: transparent;
+  color: #4a4b5e;
+}
+
+button:hover {
+  color: #f47c57;
+}
+
+button.active {
+  color: #1d1e35;
+}
+
+.answer {
+  color: #787887;
+}
+
+body {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+body section.container {
+  max-width: 900px;
+  margin: 10vh auto 0;
+  background-image: url("../images/illustration-woman-online-desktop.svg"), url("../images/bg-pattern-desktop.svg");
+  background-position: top 75px left -80px, top -160px left -390px;
+  background-repeat: no-repeat;
+  background-size: 50%, 85%;
+  border-radius: 30px;
+  position: relative;
+}
+
+body section:before {
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/illustration-box-desktop.svg");
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 200px;
+  left: -110px;
+}
+
+body main {
+  width: 50%;
+}
+
+body main button {
+  width: 100%;
+  padding: 0;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+}
+
+body main .answer {
+  display: none;
+}
+
+body main .answer.active {
+  display: block;
+}
+
+@media only screen and (max-width: 375px) {
+  #image {
+    height: 100vh;
+    width: 70%;
+    background-image: url("../images/illustration-woman-online-mobile.svg"), url("../images/bg-pattern-mobile.svg");
+    background-position: top 7% left 50%, top 45% left 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  section.container {
+    width: 90%;
+    margin: 30vh auto 0 !important;
+    background-image: none !important;
+  }
+  section.container .space {
+    min-height: 20vh;
+  }
+  section.container h1 {
+    text-align: center;
+  }
+  section:before {
+    background-image: none !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
